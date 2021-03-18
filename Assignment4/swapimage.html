@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bulbonoff</title>
+</head>
+<body>
+	<img src="bulboff.png" id="image" width= "200px"  height="200px">
+<button onclick="change()" id="pq" value="off">on/off</button>
+	<script>
+		function change()
+		{
+			e=document.getElementById('pq');
+			if (e.value=='off') {
+				document.getElementById('image').src="bulbon.png";
+				e.value='on';
+			}
+			else{
+				document.getElementById('image').src="bulboff.png";
+				e.value='off';
+			}
+		}
+	</script>
+
+</body>
+</html>
